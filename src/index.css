@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-space-bg: #05070A;
+  --color-space-card: #0D1117;
+  --color-space-border: #30363D;
+  --color-neon-cyan: #00D1FF;
+  --color-neon-magenta: #FF00E5;
+  --color-neon-yellow: #FFD600;
+  --color-neon-green: #39FF14;
+  --color-neon-blue: #0075FF;
+}
+
+@layer base {
+  body {
+    @apply bg-space-bg text-gray-100 font-sans antialiased;
+  }
+}
+
+.neon-glow-cyan {
+  box-shadow: 0 0 15px rgba(0, 209, 255, 0.4);
+}
+
+.neon-glow-magenta {
+  box-shadow: 0 0 15px rgba(255, 0, 229, 0.4);
+}
+
+.neon-text-cyan {
+  text-shadow: 0 0 8px rgba(0, 209, 255, 0.6);
+}
+
